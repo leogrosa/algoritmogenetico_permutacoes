@@ -4,8 +4,8 @@ function fak = int_to_fak(i, length)
     %    of len LENGTH, which is a list of integers."""
     fak = [];
     for k = 1:length
-        fak = append(fak,mod(i,k+1));
-        i = idivide(i,k+1);
+        fak = [fak,mod(i,k+1)];
+        i = idivide(int16(i),k+1,'floor');
     end
 end
     

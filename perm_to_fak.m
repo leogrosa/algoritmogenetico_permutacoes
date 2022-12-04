@@ -12,7 +12,7 @@ function list = perm_to_fak(perm, it0)
         %assert (a_k >= 0)
         fak = [fak,a_k-1];
         %del it[a_k]
-        it(it == a_k) = [];
+        %it(it == a_k) = [];
     end
     list = fliplr(fak);
     

@@ -151,11 +151,10 @@ clf
 MaxApt = max(Apt')';
 indice = (find(Apt(g) == max(MaxApt)));
 
-fak_final = int2fak(bin2dec(num2str(Pop(:,1))'),length(Dist)-1);
-perm_final = fak2perm(fak_final,perm_inicial)
-solucao(2:length(Dist),1) = str2numvector(perm_final)';
-DistanciaFinal = DistTotal(solucao,Dist)
-
+temp = num2str(Pop(:,j))';
+fak = int2fak(bin2dec(temp),length(Dist)-1);
+            perm = fak2perm(fak,perm_inicial);
+            solucao(2:length(Dist),1) = str2numvector(perm)';
 plot(MaxApt,'.-b');
 
 xlabel('Geraçao'); ylabel('Aptidão - 1/Dist');
