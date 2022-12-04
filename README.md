@@ -6,7 +6,7 @@ candidatos à solução em números binários. Dessa maneira, era possível real
 Já no problema do caixeiro viajante, deseja-se passar por cada cidade apenas 1 vez, e criar um cromossomo em que cada gene representa uma das cidades geraria 
 problema na etapa de permutação, uma vez que valores poderiam ser repetidos.
 
-Dessa forma, a lógica dos números binários foi utilizada. Para isso, foi pensado que havia n! maneiras de se permutar as cidades, sem repetí-las. Buscou-se uma 
+Dessa forma, a lógica dos números binários foi utilizada. Para isso, foi pensado que havia n! maneiras de se permutar as cidades, sem repeti-las. Buscou-se uma 
 maneira de mapear cada permutação por um número inteiro (que pode ser transformado para binário posteriormente). Felizmente, há uma maneira de fazer isso, encontrada
 na internet, disponível em: https://math.stackexchange.com/questions/4472267/creating-binary-information-from-a-permutation. A lógica é muito interessante, e envolve
 escrever números em uma base fatorial (diferentemente da base decimal e da base binária, em que a base é sempre a mesma para cada dígito ou bit), em que cada número
